@@ -1,0 +1,22 @@
+.footer {
+    padding: 54px 28px;
+    width: 100%;
+
+    background-color: #232f3e;
+}
+
+.footer * {
+    color: #fff;
+    text-align: right;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.footer .mail {
+    text-decoration: none;
+}
+
+.footer .mail:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}

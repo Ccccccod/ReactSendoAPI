@@ -1,0 +1,26 @@
+.option {
+    padding: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option .input {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+
+.option span {
+    font-size: 14px;
+}
+
+.option:hover span {
+    color: coral;
+}
+
+.input:checked {
+    background-color: #e5101d;
+}

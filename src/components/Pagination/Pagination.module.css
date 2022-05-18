@@ -1,0 +1,68 @@
+.pagination {
+    width: 100%;
+    height: 52px;
+    padding: 8px 12px;
+    margin-top: 12px;
+
+    background-color: #dfdfdf;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination h3 {
+    font-style: italic;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 12px;
+}
+
+.btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 8px 2px rgb(50, 188, 179);
+}
+
+.btnActive {
+    background-color: red;
+    color: #fff;
+    
+    cursor: auto;
+}
+
+.btnActive:hover {
+    box-shadow: none;
+}
+
+.btnDisabled {
+    opacity: 0.4;
+}
+
+.btnDisabled:hover {
+    cursor: auto;
+    box-shadow: none;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,56 @@
+.filter {
+    width: 206px;
+    padding: 6px 12px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.filter .header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter .header:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.filter .header .title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.filter .header .icon {
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 0.5rem solid #000;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0.5rem solid transparent;
+    transition: 0.2s linear;
+}
+
+.filter .header .expandIcon {
+    transform: rotate(0);
+}
+
+.filter .header .collapseIcon {
+    transform: rotate(180deg);
+}
+
+.collapsible {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.4s;
+}
+
+.collapsible.show {
+    height: auto;
+    /*  https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css
+        Solved using js scrollHeight: https://www.youtube.com/watch?v=4F8EYGao9pc */ 
+}
